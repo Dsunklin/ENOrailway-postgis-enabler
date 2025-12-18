@@ -1,3 +1,5 @@
+console.log("🚀 Service container started, running index.js...");
+
 const { Client } = require('pg');
 
 async function enablePostGIS() {
@@ -28,3 +30,6 @@ async function enablePostGIS() {
 }
 
 enablePostGIS();
+setInterval(() => {
+  console.log("Service is still running...");
+}, 60000); // every 60 seconds
