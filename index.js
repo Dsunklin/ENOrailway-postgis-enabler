@@ -1,5 +1,3 @@
-console.log("Starting PostGIS enable script...");
-
 const { Client } = require('pg');
 
 async function enablePostGIS() {
